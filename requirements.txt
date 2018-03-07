@@ -1,1 +1,5 @@
 flask
+pytest
+pytest-pep8
+pytest-cov
+ipython
