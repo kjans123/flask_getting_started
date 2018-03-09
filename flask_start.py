@@ -44,12 +44,12 @@ def get_distance():
     run_horiz = second_point[0]-first_point[0]
     rise_vert = 0
     rise_vert = second_point[1] - first_point[1]
-    dist_two_points = mt.sqrt(run_horiz ^ 2 + rise_vert ^ 2)
+    dist_two_points = mt.sqrt(run_horiz ** 2 + rise_vert ** 2)
     return_dict = {
         "distance": "Distance: " + str(dist_two_points),
         "a": first_point,
-        "b": second_point
-    }
+        "b": second_point,
+                  }
     return jsonify(return_dict), 200
 # from ipython run r2 =
 # requests.post("http://127.0.0.1:5000/distance",
